@@ -4,7 +4,7 @@ import products from '../public/products.json';
 
 function Home() {
   const initProfile = {
-    cardsName: "Nada aun...",
+    cardsName: "nada aun...",
   };
 
   const [zapas, setZapas] = useState({});
@@ -15,6 +15,7 @@ function Home() {
 
   useEffect(() => {
     setZapas(initProfile);
+    document.title = `Inicio`;
   }, []);
 
   return (
