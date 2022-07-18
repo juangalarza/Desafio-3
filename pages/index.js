@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Cards from '../components/Cards';
+import Cards from '../components/cards';
 import products from '../public/products.json';
 
 function Home() {
@@ -13,10 +13,10 @@ function Home() {
     setZapas({ cardsName });
   };
 
-  useEffect(() => {
-    setZapas(initProfile);
-    document.title = `Inicio`;
-  }, []);
+  // useEffect(() => {
+  //   setZapas(initProfile);
+  //   document.title = `Inicio`;
+  // }, []);
 
   return (
     <div>
