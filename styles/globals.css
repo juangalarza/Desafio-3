@@ -43,10 +43,11 @@ a {
   color: black;
   border-radius: 8px;
   width: 25%;
-
+  overflow: hidden;
 }
 .cardsImg {
   width: 100%;
+  height: 100%;
 
 }
 .cardsContent {

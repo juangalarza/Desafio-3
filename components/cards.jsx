@@ -1,10 +1,10 @@
 import React from "react";
-import Image from 'next/image';
+// import Image from 'next/image';
 
 function Cards({ cardsImage, cardsName, cardsDesc, handleClick }) {
   return (
     <div className="cards">
-      <Image className="cardsImg" src={cardsImage} alt="" />
+      <img className="cardsImg" src={cardsImage} alt="" />
       <div className="cardsContent">
         <h3>{cardsName}</h3>
         <p>{cardsDesc}</p>
