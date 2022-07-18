@@ -14,3 +14,41 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.nav-container {
+  background-color: #612EA1;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 24px;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  margin: 10px 10px;
+  gap: 10px 10px;
+  overflow: hidden;
+}
+
+/* Cards */
+.cards {
+  height: auto;
+  background-color: #f6f6f6;
+  color: black;
+  border-radius: 8px;
+  width: 25%;
+
+}
+.cardsImg {
+  width: 100%;
+
+}
+.cardsContent {
+  padding: 10px;
+}

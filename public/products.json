@@ -1,0 +1,22 @@
+[
+    {
+        "cardsName": "Jordan",
+        "cardsDesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "cardsImage": "/card-1.webp"
+    },
+    {
+        "cardsName": "Running",
+        "cardsDesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "cardsImage": "/card-2.webp"
+    },
+    {
+        "cardsName": "Soccer",
+        "cardsDesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "cardsImage": "/card-3.webp"
+    },
+    {
+        "cardsName": "Lady",
+        "cardsDesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "cardsImage": "/card-4.webp"
+    }
+]
