@@ -16,10 +16,11 @@ function Home() {
    useEffect(() => {
      
      document.title = `Inicio`;
-   }, []);
+   }, [zapas]);
+  
      useEffect(() => {
      setZapas(initProfile);
-   }, [zapas]);
+   }, []);
 
   return (
     <div>
