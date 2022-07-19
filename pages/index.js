@@ -14,8 +14,11 @@ function Home() {
   };
 
    useEffect(() => {
+     
+     document.title = `Inicio`;
+   }, []);
+     useEffect(() => {
      setZapas(initProfile);
-     //document.title = `Inicio`;
    }, [zapas]);
 
   return (
