@@ -13,10 +13,10 @@ function Home() {
     setZapas({ cardsName });
   };
 
-  // useEffect(() => {
-  //   setZapas(initProfile);
-  //   document.title = `Inicio`;
-  // }, []);
+   useEffect(() => {
+     setZapas(initProfile);
+     //document.title = `Inicio`;
+   }, [zapas]);
 
   return (
     <div>
