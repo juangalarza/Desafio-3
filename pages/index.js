@@ -15,7 +15,7 @@ function Home() {
 
    useEffect(() => {
      
-     document.title = {zapas.cardsName};
+     document.title = zapas.cardsName;
    }, [zapas]);
   
      useEffect(() => {
