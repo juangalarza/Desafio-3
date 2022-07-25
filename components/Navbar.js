@@ -7,18 +7,26 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function ButtonAppBar({
-  cardsImage,
-  cardsName,
-  cardsDesc,
-  handleClick,
-}) {
+export default function ButtonAppBar({ cardsName }) {
   return (
-    <div className="nav-container">
-        <div className="nav-logo">Logo!</div>
-        <div className="nav-right">
-          <h3>Has seleccionado: {zapas.cardsName}</h3>
-        </div>
-      </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Zapas Nike
+          </Typography>
+          <Button color="inherit">Has seleccionado: {cardsName}</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 }
