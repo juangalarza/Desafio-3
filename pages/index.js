@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Cards from '../components/cards';
+import Cards from '../components/oldcards';
 import Card from '../components/Card';
 import Navbar from '../components/Navbar';
 import products from '../public/products.json';
