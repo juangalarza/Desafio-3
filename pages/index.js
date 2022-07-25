@@ -17,10 +17,6 @@ function Home() {
   };
 
    useEffect(() => {
-<<<<<<< HEAD
-=======
-     
->>>>>>> bb8987037b7334de1440fa93b31f31f90532a10c
      document.title = zapas.cardsName;
    }, [zapas]);
   
