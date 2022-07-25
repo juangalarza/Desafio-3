@@ -14,26 +14,11 @@ export default function ButtonAppBar({
   handleClick,
 }) {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Zapas Nike
-          </Typography>
-          <Typography variant="h6" component="div" >
-            Has seleccionado: {cardsName}
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <div className="nav-container">
+        <div className="nav-logo">Logo!</div>
+        <div className="nav-right">
+          <h3>Has seleccionado: {zapas.cardsName}</h3>
+        </div>
+      </div>
   );
 }

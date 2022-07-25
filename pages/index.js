@@ -20,19 +20,19 @@ function Home() {
      document.title = zapas.cardsName;
    }, [zapas]);
   
-  //    useEffect(() => {
-  //    setZapas(initProfile);
-  //  }, []);
+     useEffect(() => {
+     setZapas(initProfile);
+   }, []);
 
   return (
     <div>
-      <Navbar />
-      {/* <div className="nav-container">
+      {/* <Navbar /> */}
+      <div className="nav-container">
         <div className="nav-logo">Logo!</div>
         <div className="nav-right">
           <h3>Has seleccionado: {zapas.cardsName}</h3>
         </div>
-      </div> */}
+      </div>
       <Grid container spacing={2} p="20px 24px">
         {products.map((datos, id) => (
           <Grid item xs={12} sm={6} md={3} xl={3}>
