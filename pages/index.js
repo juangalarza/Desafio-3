@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Cards from '../components/cards';
+import Card from '../components/Card';
+import Navbar from '../components/Navbar';
 import products from '../public/products.json';
+import Grid from '@mui/material/Grid';
 
 function Home() {
   const initProfile = {
@@ -13,30 +16,36 @@ function Home() {
     setZapas({ cardsName });
   };
 
-  // useEffect(() => {
-  //   setZapas(initProfile);
-  //   document.title = `Inicio`;
-  // }, []);
+   useEffect(() => {
+     document.title = zapas.cardsName;
+   }, [zapas]);
+  
+     useEffect(() => {
+     setZapas(initProfile);
+   }, []);
 
   return (
     <div>
-      <div className="nav-container">
+      <Navbar />
+      {/* <div className="nav-container">
         <div className="nav-logo">Logo!</div>
         <div className="nav-right">
           <h3>Has seleccionado: {zapas.cardsName}</h3>
         </div>
-      </div>
-      <div className="cardsContainer">
+      </div> */}
+      <Grid container spacing={2} p="20px 24px">
         {products.map((datos, id) => (
-          <Cards
+          <Grid item xs={12} sm={6} md={3} xl={3}>
+          <Card 
             cardsName={datos.cardsName}
             cardsDesc={datos.cardsDesc}
             cardsImage={datos.cardsImage}
             key={id}
             handleClick={handleClick}
           />
+          </Grid>
         ))}
-      </div>
+        </Grid>
     </div>
   );
 }

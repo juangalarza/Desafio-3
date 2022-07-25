@@ -27,6 +27,7 @@ a {
 }
 .cardsContainer {
   display: flex;
+
   flex-direction: row;
   padding: 10px;
   align-items: center;
@@ -37,7 +38,7 @@ a {
 }
 
 /* Cards */
-.cards {
+/* .cards {
   height: auto;
   background-color: #f6f6f6;
   color: black;
@@ -52,4 +53,4 @@ a {
 }
 .cardsContent {
   padding: 10px;
-}
+} */
