@@ -15,7 +15,7 @@ function Home() {
   const handleClick = (cardsName) => {
     setZapas({ cardsName });
   };
-/*
+
    useEffect(() => {
      document.title = zapas.cardsName;
    }, []);
@@ -23,7 +23,7 @@ function Home() {
 
    useEffect(() => {
      setZapas(initProfile);
-   }); */
+   }, []); 
    
 
   return (
