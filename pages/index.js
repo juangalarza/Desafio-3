@@ -18,10 +18,10 @@ function Home() {
 
    useEffect(() => {
      document.title = zapas.cardsName;
-   }, [initProfile]);
+   }, []);
   
-   useEffect(() => {
-     setZapas();
+   useEffect((initProfile) => {
+     setZapas(initProfile);
    }); 
    
 
