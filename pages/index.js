@@ -20,10 +20,10 @@ function Home() {
      document.title = zapas.cardsName;
    }, [zapas]);
   
-  /* useEffect(() => {
+   useEffect(() => {
      setZapas(initProfile);
    }, []); 
-   */
+   
 
   return (
     <div>
