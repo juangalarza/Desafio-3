@@ -16,7 +16,7 @@ function Home() {
     setZapas({ cardsName });
   };
 
-   useEffect(() => {
+   useEffect((initProfile) => {
      document.title = zapas.cardsName;
    }, []);
   setZapas(initProfile);
