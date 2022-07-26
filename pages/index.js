@@ -30,11 +30,11 @@ function Home() {
     <div>
       <Navbar cardsName={zapas.cardsName} />
       
-      <Grid container spacing={2} p="20px 24px">
+      <Grid container key={id} spacing={2} p="20px 24px">
         {products.map((datos, id) => (
           
           <Grid item xs={12} sm={6} md={3} xl={3}>
-          <div key={id}>
+          
           <Card 
             cardsName={datos.cardsName}
             cardsDesc={datos.cardsDesc}
@@ -44,7 +44,7 @@ function Home() {
           />
              
           </Grid>
-         </div>
+         
         ))}
         </Grid>
     
