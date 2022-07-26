@@ -19,10 +19,11 @@ function Home() {
    useEffect(() => {
      document.title = zapas.cardsName;
    }, []);
-  
-   useEffect((initProfile) => {
-     setZapas(initProfile), [];
-   }); 
+  setZapas(initProfile);
+  /*
+   useEffect(() => {
+     
+   }); */
    
 
   return (
