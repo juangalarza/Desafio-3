@@ -22,7 +22,7 @@ function Home() {
   
      useEffect(() => {
      setZapas(initProfile);
-   }, []);
+   }, [zapas]);
 
   return (
     <div>
