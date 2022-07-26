@@ -18,7 +18,7 @@ function Home() {
 
    useEffect(() => {
      document.title = zapas.cardsName;
-   }, []);
+   }, [zapas]);
   
 
    useEffect(() => {
