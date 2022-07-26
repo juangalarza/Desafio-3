@@ -42,9 +42,9 @@ function Home() {
 
             handleClick={handleClick}
           />
-              </div>
+             
           </Grid>
-        
+         </div>
         ))}
         </Grid>
     
