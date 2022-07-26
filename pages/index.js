@@ -28,6 +28,7 @@ function Home() {
   return (
     <div>
       <Navbar cardsName={zapas.cardsName} />
+      <div key={id}>
       <Grid container spacing={2} p="20px 24px">
         {products.map((datos, id) => (
           <Grid item xs={12} sm={6} md={3} xl={3}>
@@ -35,12 +36,13 @@ function Home() {
             cardsName={datos.cardsName}
             cardsDesc={datos.cardsDesc}
             cardsImage={datos.cardsImage}
-            key={id}
+   
             handleClick={handleClick}
           />
           </Grid>
         ))}
         </Grid>
+    </div>
     </div>
   );
 }
